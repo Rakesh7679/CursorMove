@@ -1,0 +1,145 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: re;
+    src: url(./Rejouice-Headline.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nb;
+
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    position: relative;
+
+
+}
+#cursor{
+    height: 5vw;
+    width: 5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+}
+#cursor h5{
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-bottom: 5vw; */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+}
+nav{
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+    padding: 3vw 3vw;
+}
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+#page1-content h1{
+    font-family: re;
+    font-size: 27vw;
+    font-weight: 100;
+}
+#page1-content h1 span{
+    font-family: re;
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    background-color: beige;
+    position: relative;
+    padding: 3vw;
+}
+#page2-top{
+    /* background-color: red; */
+    text-align: center;
+
+}
+#page2-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+
+}
+#page2-top h4 span{
+     font-size: 0.65vw;
+     background-color: black;
+     color: #fff;
+     padding: 4px 8px;
+     border-radius: 10px;
+}
+#page2-top h2{
+    font-size: 4vw;
+    font-weight: 500;
+
+}
+#page2-elements {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 8vw;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+#page2-elements .box{
+    height: 100%;
+    width: 32.5%;
+    background-color: blue;
+    position: relative;
+}
+#page2-elements .box video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+#page2-elements .box img {
+position: absolute;
+height: 100%;
+width: 100%;
+object-fit: cover;
+transition: all ease-in 1s;
+}
+#page2-elements .box:hover img{
+    opacity: 0;
+}
